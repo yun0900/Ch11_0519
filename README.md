@@ -1,11 +1,12 @@
+<h1>eval.py 執行結果</h1>
 <img width="554" height="263" alt="image" src="https://github.com/user-attachments/assets/917b5656-67a0-46a0-8983-63d7d7401d23" />
-查詢問題 (Query)	Top-1 Cosine Distance	Top-2 Cosine Distance	Top-3 Cosine Distance
-How does chaining resolve collisions?	1.1478
+<h1>Top-3 對照表</h1>
 <img width="554" height="150" alt="image" src="https://github.com/user-attachments/assets/e7fc889f-7ea4-4467-8396-a168c2328391" />
 <img width="554" height="154" alt="image" src="https://github.com/user-attachments/assets/4ef29f49-751f-4e0d-baab-b40cbac543b7" />
 <img width="554" height="156" alt="image" src="https://github.com/user-attachments/assets/2bfa1cef-5a4b-44c3-b828-a5654b949686" />
-![Uploading image.png…]()
+<img width="554" height="159" alt="image" src="https://github.com/user-attachments/assets/a024afdd-39f6-4489-aadc-fdeb48c8424e" />
 
+<h1>vLLM 與 Chroma 的異同比較</h1>
 共通點
 核心目的都是為了「省空間與省算力（去重與快取）」
 vLLM 透過雜湊（如 hash(Block)）來識別哪些前置提示詞（Prompt Tokens）已經被計算過 KV Cache，藉此直接重用（Automatic Prefix Caching），省下重複計算 Prefill 的算力。
